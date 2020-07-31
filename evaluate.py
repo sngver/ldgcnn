@@ -59,8 +59,7 @@ HOSTNAME = socket.gethostname()
 # ModelNet40 official train/test split
 TRAIN_FILES = provider.getDataFiles( \
     os.path.join(BASE_DIR, 'data/modelnet40_ply_hdf5_2048/train_files.txt'))
-TEST_FILES = provider.getDataFiles(\
-    os.path.join(BASE_DIR, 'data/modelnet40_ply_hdf5_2048/test_files.txt'))
+TEST_FILES = os.path.join(BASE_DIR, 'data/mydataset_hdf5/test_files.txt'))
 
 is_training = False
 #%%
